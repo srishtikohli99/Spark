@@ -27,3 +27,20 @@ Save these in ~/.bash_profile ans save
 Running the commands will export these for only that bash instance
 
 Working in conda env python 3.7
+
+
+# `Running Spark`
+
+### Running file
+
+1. Activate the env
+2. cd in repo
+3. run spark-submit <filename>
+ 
+### Run pyspark in shell
+
+1. cd in Spark folder(where it is installed) /Library/spark
+2. type `pyspark` in terminal
+3. ready
+
+ 
