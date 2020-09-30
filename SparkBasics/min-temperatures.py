@@ -56,7 +56,7 @@ def parseLine(line):
     temperature = float(fields[3]) * 0.1 * (9.0 / 5.0) + 32.0
     return (stationID, fieldType, temperature)
 
-lines = sc.textFile("data/1800.csv")
+lines = sc.textFile("../data/1800.csv")
 parsedLines = lines.map(lambda x: parseLine(x))
 minTemps = parsedLines.filter(lambda x: x[1] == "TMIN")
 stationTemps = minTemps.map(lambda x: (x[0], x[2]))

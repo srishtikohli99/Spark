@@ -3,7 +3,7 @@ from pyspark import SparkConf, SparkContext
 conf = SparkConf().setMaster("local").setAppName("WordCount")
 sc = SparkContext(conf = conf)
 
-input = sc.textFile("data/Book")
+input = sc.textFile("../data/Book")
 words = input.flatMap(lambda x: x.split())
 print(words.take(5))
 print("----------------------------------------------")

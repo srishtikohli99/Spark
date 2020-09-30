@@ -6,7 +6,7 @@ conf = SparkConf().setMaster("local").setAppName("RatingsHistogram")  #set local
 #for job to identify in the UI app name
 sc = SparkContext(conf = conf)
 
-lines = sc.textFile("data/ml-100k/u.data")
+lines = sc.textFile("../data/ml-100k/u.data")
 #line is rdd.. sc.textFile reads line by line the mentioned dataset and stores in lines
 #lines consist of (no. of lines in u.data) values and each value is a string
 ratings = lines.map(lambda x: x.split()[2])

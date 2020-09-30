@@ -15,7 +15,7 @@ def parseLine2(line):
     numFriends = int(fields[3])
     return numFriends
 
-lines = sc.textFile("data/fakefriends.csv")
+lines = sc.textFile("../data/fakefriends.csv")
 rdd = lines.map(parseLine)
 #print(rdd.count())
 #print("--------------------------")

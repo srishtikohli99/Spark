@@ -13,7 +13,7 @@ spark = SparkSession.builder.appName("SparkSQL").getOrCreate()
 
 #reading as dataframe
 people = spark.read.option("header", "true").option("inferSchema", "true")\
-    .csv("data/fakefriends-header.csv")
+    .csv("../data/fakefriends-header.csv")
     
     
 # dataframe operation
