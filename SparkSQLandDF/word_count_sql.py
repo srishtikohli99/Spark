@@ -16,6 +16,9 @@ df = spark.read.text("../data/Book")
 
 #df.show()
 #df.value means df=dataframe df and value is the column name by default
+
+##BOTH WORK
+#words = df.select((func.explode(func.split(func.col("value"), "\\W+")).alias("word")))
 words = df.select((func.explode(func.split(df.value, "\\W+")).alias("word")))
 #words.show()
 
