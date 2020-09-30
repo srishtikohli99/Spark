@@ -31,7 +31,6 @@ connections = lines.withColumn("id", func.split(lines.value, " ")[0])\
              
 connections.show()               
 
-
 ## first returns 1st row
 """
 n = connections.sort("connections").first()[1]
