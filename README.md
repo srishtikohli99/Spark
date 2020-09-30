@@ -40,7 +40,6 @@ Working in conda env python 3.7
 ### Run pyspark in shell
 
 1. cd in Spark folder(where it is installed) /Library/spark
-2. type `pyspark` in terminal
-3. ready
+2. type `pyspark` in bash
 
  
